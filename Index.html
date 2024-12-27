@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Tickect Booking Online</title>
+    <link rel="icon" type="image/x-icon" href="Images/rdc-redbus-logo.svg">
+    <link rel="stylesheet" href="Style.css" />
+
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <header id="redBusHeader">
+        <div id="navbar">
+          <div id="logo">
+            <section id="logo-main">
+              <a href=""><img src="Images/rdc-redbus-logo.svg" alt="" /></a>
+
+              <span class="vertical_seperator"></span>
+            </section>
+
+            <section id="ticket-btn">
+              <div class="ticket" id="bus-ticket">
+                <a href="">
+                  <i class="bx bxs-bus"></i>
+                  <span>Bus Tickets</span>
+                </a>
+              </div>
+
+              <div class="ticket" id="train-ticket">
+                <a href="">
+                  <i class="bx bxs-train">
+                    <sup class="discount">
+                      <i class="bx bx-rupee"></i>60 off
+                    </sup>
+                  </i>
+                  <span>Train Tickets</span>
+                </a>
+              </div>
+            </section>
+          </div>
+
+          <div id="navlist">
+            <a class="navListItems" href="">
+              <i class="bx bx-headphone"></i>
+              <span>Help</span>
+            </a>
+            <a class="navListItems" href="">
+              <i class="bx bx-chat"></i>
+              <span class="navListItemText"
+                >English
+                <i class="bx bx-chevron-down"></i>
+              </span>
+            </a>
+            <a class="navListItems" href="">
+              <i class="bx bxs-user-account"></i>
+              <span class="navListItemText"
+                >Account
+                <i class="bx bx-chevron-down"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div id="home-container">
+        <div id="topSection">
+          <div id="ticket-booking-container">
+            <div class="imgDiv">
+              <picture>
+                <img
+                  src="Images/Redbus BG.webp"
+                  alt="Image"
+                  class="heroImgStyle"
+                  title="redBus"
+                />
+              </picture>
+            </div>
+            <h1 class="heading">
+              India's No. 1 Online Bus Ticket Booking Site
+            </h1>
+
+            <div id="ticket-input-wrapper">
+              <div id="ticket-input-container">
+                
+                <div id="ticket-input">
+                  <div role="button" class="input" id="source">
+                    <picture>
+                      <img src="Images/from.png" alt="" />
+                    </picture>
+                    <section class="input-group">
+                      <label for="from">From</label>
+                      <input type="text" id="from" placeholder="" />
+                    </section>
+                  </div>
+
+                  <div role="button" class="input" id="destination">
+                    <picture>
+                        
+                      <img src="Images/to.png" alt="" />
+                      
+                    </picture>
+                    <section class="input-group">
+                      <label for="to">To</label>
+                      <input type="text" id="to" placeholder="" />
+                    </section>
+                  </div>
+
+                  <div role="button" class="input" id="date-of-journey">
+                    <picture>
+                      <img src="Images/date.png" alt="" />
+                    </picture>
+                    <section class="input-group">
+                      <label for="date">Date</label>
+                      <input type="date" id="date" placeholder="" />
+                    </section>
+                  </div>
+
+                  <!-- <div id="search"> -->
+                  <button class="input" id="search">SEARCH BUSES</button>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="offer-container">
+          <div id="offer-wrapper">
+            <div id="offer">
+              <div id="offer-section">
+                <h2>TRENDING OFFERS</h2>
+                <a href="">View All</a>
+              </div>
+
+              <div id="offer-corousel">
+                <div id="offer-cards">
+                  <div class="offer-div generalBusOffer">
+                    <div class="offer-logo">
+                      <img
+                        class="offer-img"
+                        src="Images/Offer Logo/First.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="offer-details">
+                      <div class="bus">BUS</div>
+                      <div class="offer-heading">
+                        Save up to Rs. 250 on bus tickets
+                      </div>
+                      <div class="validity">Valid till 31 Dec</div>
+                      <div class="discount-coupon">
+                        <div class="Coupon-code">FIRST</div>
+                        <img
+                          src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                          alt="copy"
+                          class="copy-btn"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="offer-div ap-ts-route">
+                    <div class="offer-logo">
+                      <img
+                        class="offer-img"
+                        src="Images/Offer Logo/AP-TS.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="offer-details">
+                      <div class="bus">BUS</div>
+                      <div class="offer-heading">
+                        Save up to Rs. 300 on AP, TS routes
+                      </div>
+                      <div class="validity">Valid till 26 Dec</div>
+                      <div class="discount-coupon">
+                        <div class="Coupon-code">SUPERHIT</div>
+                        <img
+                          src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                          alt="copy"
+                          class="copy-btn"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="offer-div charteredBusOffer">
+                    <div class="offer-logo">
+                      <img
+                        class="offer-img"
+                        src="Images/Offer Logo/Chartered.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="offer-details">
+                      <div class="bus">BUS</div>
+                      <div class="offer-heading">
+                        Save up to Rs. 300 on Chartered Bus
+                      </div>
+                      <div class="validity">Valid till 31 Dec</div>
+                      <div class="discount-coupon">
+                        <div class="Coupon-code">CHARTERED15</div>
+                        <img
+                          src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                          alt="copy"
+                          class="copy-btn"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="offer-div sbstcBusOffer">
+                    <div class="offer-logo">
+                      <img
+                        class="offer-img"
+                        src="Images/Offer Logo/SBSTC.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="offer-details">
+                      <div class="bus">BUS</div>
+                      <div class="offer-heading">
+                        Save 25% up to Rs. 100 on SBSTC bus
+                      </div>
+                      <div class="validity">Valid till 31 Dec</div>
+                      <div class="discount-coupon">
+                        <div class="Coupon-code">SBNEW</div>
+                        <img
+                          src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                          alt="copy"
+                          class="copy-btn"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="offer-div upsrtcBusOffer">
+                    <div class="offer-logo">
+                      <img
+                        class="offer-img"
+                        src="Images/Offer Logo/UPSRTC.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="offer-details">
+                      <div class="bus">BUS</div>
+                      <div class="offer-heading">
+                        Save up to Rs. 250 on UPSRTC bus tickets
+                      </div>
+                      <div class="validity">Valid till 31 Dec</div>
+                      <div class="discount-coupon">
+                        <div class="Coupon-code">UPSRTC</div>
+                        <img
+                          src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                          alt="copy"
+                          class="copy-btn"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="offer-div gajalBusOffer">
+                    <div class="offer-logo">
+                      <img
+                        class="offer-img"
+                        src="Images/Offer Logo/GAJAL.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="offer-details">
+                      <div class="bus">BUS</div>
+                      <div class="offer-heading">
+                        Save up to Rs. 100 on Gajal Travels
+                      </div>
+                      <div class="validity">Valid till 31 Dec</div>
+                      <div class="discount-coupon">
+                        <div class="Coupon-code">GAJALBUS10</div>
+                        <img
+                          src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                          alt="copy"
+                          class="copy-btn"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="offer-div interCityBusOffer">
+                    <div class="offer-logo">
+                      <img
+                        class="offer-img"
+                        src="Images/Offer Logo/INTRCITY.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="offer-details">
+                      <div class="bus">BUS</div>
+                      <div class="offer-heading">
+                        Save up to Rs. 50 on IntrCity SmartBus
+                      </div>
+                      <div class="validity">Valid till 15 Feb</div>
+                      <div class="discount-coupon">
+                        <div class="Coupon-code">INTRCITY</div>
+                        <img
+                          src="https://s2.rdbuz.com/web/images/homeV2/copy.svg"
+                          alt="copy"
+                          class="copy-btn"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="govtBus">
+          <!-- <div id="govt-wrapper"> -->
+          <!-- <div id="govtBusOffer"> -->
+          <div id="govtBusSection">
+            <h2>GOVERNMENT BUSES</h2>
+            <a href="">View All</a>
+          </div>
+
+          <div id="govtBusCorousel">
+            <div id="govtBusCards">
+              <div class="govtBusDiv">
+                <div class="mainContent">
+                  <div class="maininfo">
+                    <div class="stateBusLogo">
+                      <img
+                        class="offer-img"
+                        src="Images/StateBusLogo/BSRTClogo.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="info">
+                      <div class="stateNameAndRating">
+                        <div class="stateName">BSRTC</div>
+                        <div class="rtcRating">
+                          <i class="bx bxs-star"></i>
+                          <span>3.91</span>
+                        </div>
+                      </div>
+
+                      <div class="nameHindi">
+                        बिहार राज्य रोड ट्रान्सपोर्ट कॉर्पोरेशन
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="serviceWrapper">
+                    <div class="serviceDetails">
+                      220 services including Volvo Bus, AC &amp; Non AC Bus and
+                      more
+                    </div>
+                  </div>
+
+                  <div class="trustmaker">
+                    <picture>
+                      <img src="Images/rdc-redbus-logo.svg" alt="" />
+                    </picture>
+                    Official booking partner of BSRTC
+                  </div>
+                </div>
+
+                <div class="rtcFooter">
+                  <div class="rtcFooterWrapper">
+                    <div class="rtcFooterInner">
+                      <div class="rtcFooterCard">
+                        <div class="rtcFooterOfferText">
+                          <div class="rtcOfferText">
+                            Use code FIRST to save upto ₹250 (only for first
+                            time users)
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govtBusDiv">
+                <div class="mainContent">
+                  <div class="maininfo">
+                    <div class="stateBusLogo">
+                      <img
+                        class="offer-img"
+                        src="Images/StateBusLogo/UPSRTClogo.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="info">
+                      <div class="stateNameAndRating">
+                        <div class="stateName">UPSRTC</div>
+                        <div class="rtcRating">
+                          <i class="bx bxs-star"></i>
+                          <span>3.94</span>
+                        </div>
+                      </div>
+
+                      <div class="nameHindi">
+                        उत्तर प्रदेश राज्य सड़क परिवहन निगम
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="serviceWrapper">
+                    <div class="serviceDetails">
+                      1738 services including Janrath,Shatabdi and more
+                    </div>
+                  </div>
+
+                  <div class="trustmaker">
+                    <picture>
+                      <img src="Images/rdc-redbus-logo.svg" alt="" />
+                    </picture>
+                    Official booking partner of BSRTC
+                  </div>
+                </div>
+
+                <div class="rtcFooter">
+                    <div class="rtcFooterWrapper">
+                      <div class="rtcFooterInner">
+                        <div class="rtcFooterCard">
+                          <div class="rtcFooterOfferText">
+                            <div class="rtcOfferText">
+                            24*7 customer service (Call or chat)
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govtBusDiv">
+                <div class="mainContent">
+                  <div class="maininfo">
+                    <div class="stateBusLogo">
+                      <img
+                        class="offer-img"
+                        src="Images/StateBusLogo/SBTClogo.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="info">
+                      <div class="stateNameAndRating">
+                        <div class="stateName">SBSTC</div>
+                        <div class="rtcRating">
+                          <i class="bx bxs-star"></i>
+                          <span>3.95</span>
+                        </div>
+                      </div>
+
+                      <div class="nameHindi">
+                        দক্ষিণবঙ্গ রাষ্ট্রীয় পরিবহণ সংস্থা
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="serviceWrapper">
+                    <div class="serviceDetails">
+                      480 services including Volvo Bus, AC &amp; Non AC Bus and
+                      more
+                    </div>
+                  </div>
+
+                  <div class="trustmaker">
+                    <picture>
+                      <img src="Images/rdc-redbus-logo.svg" alt="" />
+                    </picture>
+                    Official booking partner of BSRTC
+                  </div>
+                </div>
+
+                <div class="rtcFooter">
+                    <div class="rtcFooterWrapper">
+                      <div class="rtcFooterInner">
+                        <div class="rtcFooterCard">
+                          <div class="rtcFooterOfferText">
+                            <div class="rtcOfferText">
+                            Use code FIRST to save upto ₹250 (only for first
+                            time users)
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govtBusDiv">
+                <div class="mainContent">
+                  <div class="maininfo">
+                    <div class="stateBusLogo">
+                      <img
+                        class="offer-img"
+                        src="Images/StateBusLogo/APRTClogo.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="info">
+                      <div class="stateNameAndRating">
+                        <div class="stateName">APSRTC</div>
+                        <div class="rtcRating">
+                          <i class="bx bxs-star"></i>
+                          <span>3.85</span>
+                        </div>
+                      </div>
+
+                      <div class="nameHindi">
+                        ఆంధ్రప్రదేశ్ రాష్ట్ర రోడ్డు రవాణా సంస్థ
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="serviceWrapper">
+                    <div class="serviceDetails">
+                      1539 services including Garuda, Garuda Plus and more
+                    </div>
+                  </div>
+
+                  <div class="trustmaker">
+                    <picture>
+                      <img src="Images/rdc-redbus-logo.svg" alt="" />
+                    </picture>
+                    Official booking partner of BSRTC
+                  </div>
+                </div>
+
+                <div class="rtcFooter">
+                    <div class="rtcFooterWrapper">
+                      <div class="rtcFooterInner">
+                        <div class="rtcFooterCard">
+                          <div class="rtcFooterOfferText">
+                            <div class="rtcOfferText">
+                            Use code FIRST to save upto ₹250 (only for first
+                            time users)
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govtBusDiv">
+                <div class="mainContent">
+                  <div class="maininfo">
+                    <div class="stateBusLogo">
+                      <img
+                        class="offer-img"
+                        src="Images/StateBusLogo/HRTClogo.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="info">
+                      <div class="stateNameAndRating">
+                        <div class="stateName">HRTC</div>
+                        <div class="rtcRating">
+                          <i class="bx bxs-star"></i>
+                          <span>3.98</span>
+                        </div>
+                      </div>
+
+                      <div class="nameHindi">हिमाचल सड़क परिवहन निगम</div>
+                    </div>
+                  </div>
+
+                  <div class="serviceWrapper">
+                    <div class="serviceDetails">
+                      480 services including Himgaurav, Himmani and more
+                    </div>
+                  </div>
+
+                  <div class="trustmaker">
+                    <picture>
+                      <img src="Images/rdc-redbus-logo.svg" alt="" />
+                    </picture>
+                    Official booking partner of BSRTC
+                  </div>
+                </div>
+
+                <div class="rtcFooter">
+                    <div class="rtcFooterWrapper">
+                      <div class="rtcFooterInner">
+                        <div class="rtcFooterCard">
+                          <div class="rtcFooterOfferText">
+                            <div class="rtcOfferText">
+                            Use code FIRST to save upto ₹250 (only for first
+                            time users)
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govtBusDiv">
+                <div class="mainContent">
+                  <div class="maininfo">
+                    <div class="stateBusLogo">
+                      <img
+                        class="offer-img"
+                        src="Images/StateBusLogo/NBSTClogo.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="info">
+                      <div class="stateNameAndRating">
+                        <div class="stateName">NBSTC</div>
+                        <div class="rtcRating">
+                          <i class="bx bxs-star"></i>
+                          <span>3.93</span>
+                        </div>
+                      </div>
+
+                      <div class="nameHindi">
+                        উত্তরবঙ্গ রাজ্য পরিবহন কর্পোরেশন
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="serviceWrapper">
+                    <div class="serviceDetails">
+                      30 services including Volvo Bus, AC &amp; Non AC Bus and
+                      more
+                    </div>
+                  </div>
+
+                  <div class="trustmaker">
+                    <picture>
+                      <img src="Images/rdc-redbus-logo.svg" alt="" />
+                    </picture>
+                    Official booking partner of BSRTC
+                  </div>
+                </div>
+
+                <div class="rtcFooter">
+                    <div class="rtcFooterWrapper">
+                      <div class="rtcFooterInner">
+                        <div class="rtcFooterCard">
+                          <div class="rtcFooterOfferText">
+                            <div class="rtcOfferText">
+                            Use code FIRST to save upto ₹250 (only for first
+                            time users)
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govtBusDiv">
+                <div class="mainContent">
+                  <div class="maininfo">
+                    <div class="stateBusLogo">
+                      <img
+                        class="offer-img"
+                        src="Images/StateBusLogo/JKSRTClogo.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="info">
+                      <div class="stateNameAndRating">
+                        <div class="stateName">JKSRTC</div>
+                        <div class="rtcRating">
+                          <i class="bx bxs-star"></i>
+                          <span>3.91</span>
+                        </div>
+                      </div>
+
+                      <div class="nameHindi">
+                        जम्मू और कश्मीर सड़क परिवहन निगम
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="serviceWrapper">
+                    <div class="serviceDetails">
+                      16 services including Volvo Bus, AC &amp; Non AC Bus and
+                      more
+                    </div>
+                  </div>
+
+                  <div class="trustmaker">
+                    <picture>
+                      <img src="Images/rdc-redbus-logo.svg" alt="" />
+                    </picture>
+                    Official booking partner of BSRTC
+                  </div>
+                </div>
+
+                <div class="rtcFooter">
+                    <div class="rtcFooterWrapper">
+                      <div class="rtcFooterInner">
+                        <div class="rtcFooterCard">
+                          <div class="rtcFooterOfferText">
+                            <div class="rtcOfferText">
+                            Use code FIRST to save upto ₹250 (only for first
+                            time users)
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govtBusDiv">
+                <div class="mainContent">
+                  <div class="maininfo">
+                    <div class="stateBusLogo">
+                      <img
+                        class="offer-img"
+                        src="Images/StateBusLogo/TGSRTClogo.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="info">
+                      <div class="stateNameAndRating">
+                        <div class="stateName">TGSRTC</div>
+                        <div class="rtcRating">
+                          <i class="bx bxs-star"></i>
+                          <span>3.71</span>
+                        </div>
+                      </div>
+
+                      <div class="nameHindi">
+                        తెలంగాణ రాష్ట్ర రోడ్డు రవాణా సంస్థ
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="serviceWrapper">
+                    <div class="serviceDetails">
+                      1450 services including Garuda Plus, Rajdhani and more
+                    </div>
+                  </div>
+
+                  <div class="trustmaker">
+                    <picture>
+                      <img src="Images/rdc-redbus-logo.svg" alt="" />
+                    </picture>
+                    Official booking partner of BSRTC
+                  </div>
+                </div>
+
+                <div class="rtcFooter">
+                    <div class="rtcFooterWrapper">
+                      <div class="rtcFooterInner">
+                        <div class="rtcFooterCard">
+                          <div class="rtcFooterOfferText">
+                            <div class="rtcOfferText">
+                            Use code FIRST to save upto ₹250 (only for first
+                            time users)
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- </div> -->
+
+          <!-- </div> -->
+        </div>
+
+        <div class="railContainer">
+            <div class="railWrapper">
+              <div class="aboutUsSection">
+                <div class="aboutUsLeftSection">
+                  <div class="aboutUsLeftTopSection">
+                    <h1>
+                      NOW, <b>GET MORE THAN JUST BUS</b> TICKETS WITH REDBUS!
+                    </h1>
+
+                    <div class="railTicketBtnWrapper">
+                      <div role="button" class="railTicketBtn">
+                        <picture>
+                          <img
+                            src="Images/TrainTicket/rail_vertical.svg"
+                            alt=""
+                          />
+                        </picture>
+
+                        <div class="railTickeBtnText">Train Tickets</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="aboutUSLeftLowerSection">
+                    <div class="railBusinessTextWrapper">
+                      <div class="railBusinessText">
+                        Book IRCTC Train Tickets on redRail simple &amp;
+                        superfast booking process with no service fee + no
+                        payment gateway charge.
+                      </div>
+
+                      <div class="railTrustMaker">
+                        <div class="irctcPartner railTrustText">
+                          <picture>
+                            <img
+                              src="Images/TrainTicket/railAuthorized.png"
+                              alt=""
+                            />
+                          </picture>
+
+                          <div class="railPartnerText">
+                            Authrised IRCTC Partner
+                          </div>
+                        </div>
+
+                        <div class="upiRefund railTrustText">
+                          <picture>
+                            <img
+                              src="Images/TrainTicket/railHasslefree.svg"
+                              alt=""
+                            />
+                          </picture>
+
+                          <div class="railPartnerText">
+                            Instant refunds on UPI payments
+                          </div>
+                        </div>
+
+                        <div class="customerSupport railTrustText">
+                          <picture>
+                            <img
+                              src="Images/TrainTicket/CustomerSupport.svg"
+                              alt=""
+                            />
+                          </picture>
+
+                          <div class="railPartnerText">
+                            Hassle-free customer support
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a class="bookRailTicketBtn" href=""
+                      >Book Train Ticket <i class="bx bx-right-arrow-alt"></i
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="aboutUsRight">
+                  <picture>
+                    <img
+                      class="aboutUsBg"
+                      src="Images/TrainTicket/TrainBG.svg"
+                      alt=""
+                    />
+                  </picture>
+                  <picture>
+                    <img
+                      class="railPop"
+                      src="Images/TrainTicket/railPop.webp"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="adsContainer">
+          <!-- <div class="adsCards">
+            <div class="railWrapper">
+              <div class="aboutUsSection">
+                <div class="aboutUsLeftSection">
+                  <div class="aboutUsLeftTopSection">
+                    <h1>
+                      NOW, <b>GET MORE THAN JUST BUS</b> TICKETS WITH REDBUS!
+                    </h1>
+
+                    <div class="railTicketBtnWrapper">
+                      <div role="button" class="railTicketBtn">
+                        <picture>
+                          <img
+                            src="Images/TrainTicket/rail_vertical.svg"
+                            alt=""
+                          />
+                        </picture>
+
+                        <div class="railTickeBtnText">Train Tickets</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="aboutUSLeftLowerSection">
+                    <div class="railBusinessTextWrapper">
+                      <div class="railBusinessText">
+                        Book IRCTC Train Tickets on redRail simple &amp;
+                        superfast booking process with no service fee + no
+                        payment gateway charge.
+                      </div>
+
+                      <div class="railTrustMaker">
+                        <div class="irctcPartner railTrustText">
+                          <picture>
+                            <img
+                              src="Images/TrainTicket/railAuthorized.png"
+                              alt=""
+                            />
+                          </picture>
+
+                          <div class="railPartnerText">
+                            Authrised IRCTC Partner
+                          </div>
+                        </div>
+
+                        <div class="upiRefund railTrustText">
+                          <picture>
+                            <img
+                              src="Images/TrainTicket/railHasslefree.svg"
+                              alt=""
+                            />
+                          </picture>
+
+                          <div class="railPartnerText">
+                            Instant refunds on UPI payments
+                          </div>
+                        </div>
+
+                        <div class="customerSupport railTrustText">
+                          <picture>
+                            <img
+                              src="Images/TrainTicket/CustomerSupport.svg"
+                              alt=""
+                            />
+                          </picture>
+
+                          <div class="railPartnerText">
+                            Hassle-free customer support
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a class="bookRailTicketBtn" href=""
+                      >Book Train Ticket <i class="bx bx-right-arrow-alt"></i
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="aboutUsRight">
+                  <picture>
+                    <img
+                      class="aboutUsBg"
+                      src="Images/TrainTicket/TrainBG.svg"
+                      alt=""
+                    />
+                  </picture>
+                  <picture>
+                    <img
+                      class="railPop"
+                      src="Images/TrainTicket/railPop.webp"
+                      alt=""
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="adsCards">
+            <div class="appInstallerContainer">
+              <div class="appInstallerInner">
+                <h1>ENJOY THE APP!</h1>
+                <div class="appInstallerLowerSection">
+                  <div class="appRating">
+                    <div class="feature">
+                      <div class="keyFeature">
+                        <img src="Images/AppInstaller/greenTick.svg" alt="" />
+
+                        <text class="keyPoint">Quick access</text>
+                      </div>
+
+                      <div class="keyFeature">
+                        <img src="Images/AppInstaller/greenTick.svg" alt="" />
+
+                        <text class="keyPoint">Superior live tracking</text>
+                      </div>
+                    </div>
+
+                    <div class="appDownloadDetails">
+                      <div class="appDownloadDetailStore">
+                        <div class="storeRating">
+                          4.5
+                          <i class="bx bxs-star"></i>
+                        </div>
+                        <text> 50M+ Downloads</text>
+                        <b> Play Store</b>
+                      </div>
+
+                      <div class="appDownloadDetailStore">
+                        <div class="storeRating">
+                          4.6
+                          <i class="bx bxs-star"></i>
+                        </div>
+                        <text> 50M+ Downloads</text>
+                        <b> App Store</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="appDownloadWrapper">
+                    <div class="appDownload">
+                      <div class="appDownloadScanner">
+                        <span>Scan to download</span>
+                        <img src="Images/AppInstaller/qrImage.svg" alt="" />
+                      </div>
+
+                      <div class="appDownloadLink">
+                        <span> Download App on </span>
+                        <div class="playStoreAndAppStore">
+                          <img
+                            src="Images/AppInstaller/playStoreLink.svg"
+                            alt=""
+                          />
+
+                          <img
+                            src="Images/AppInstaller/appStoreLink.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="adsCards">
+            <div class="primoContainer">
+              <div class="primoInner">
+                <picture>
+                  <img
+                    src="Images/AppInstaller/primoHomeBannerComp.webp"
+                    alt=""
+                  />
+                </picture>
+                <div class="primoRightSection">
+                  <div class="primoTrustMaker">
+                    <div class="primoLogo">
+                      <i class="bx bx-stopwatch"></i>
+                    </div>
+                    <div class="primoFeature">
+                      <div class="primoFeatueTitle">On time</div>
+                      <div class="primoFeatureDescription">
+                        Punctual arrivals on 95% trips
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="primoTrustMaker">
+                    <div class="primoLogo">
+                      <i class="bx bxs-hand"></i>
+                    </div>
+                    <div class="primoFeature">
+                      <div class="primoFeatueTitle">Friendly Staff</div>
+                      <div class="primoFeatureDescription">
+                        Always ready to help
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="primoTrustMaker">
+                    <div class="primoLogo">
+                      <i class="bx bx-star"></i>
+                    </div>
+                    <div class="primoFeature">
+                      <div class="primoFeatueTitle">Top Rated</div>
+                      <div class="primoFeatureDescription">
+                        Buses with 4+ star rating
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="globalPresenceWrapper">
+          <div class="globalPresenceContainer">
+            <div class="globalPresenceInner">
+              <div class="globalPresenceTitle">Global Presence</div>
+
+              <div class="globalPresenceCountry">
+                <div class="globalActiveCountry">
+                  <picture>
+                    <img
+                      class="globalCountryFlag"
+                      src="Images/globalPresence/Colombia.svg"
+                      alt=""
+                    />
+                  </picture>
+                  <span class="globalCountryName"> Colombia </span>
+                </div>
+
+                <div class="globalActiveCountry">
+                  <picture>
+                    <img
+                      class="globalCountryFlag"
+                      src="Images/globalPresence/India.svg"
+                      alt=""
+                    />
+                  </picture>
+                  <span class="globalCountryName"> India </span>
+                </div>
+
+                <div class="globalActiveCountry">
+                  <picture>
+                    <img
+                      class="globalCountryFlag"
+                      src="Images/globalPresence/Indonesia.svg"
+                      alt=""
+                    />
+                  </picture>
+                  <span class="globalCountryName"> indonesia </span>
+                </div>
+
+                <div class="globalActiveCountry">
+                  <picture>
+                    <img
+                      class="globalCountryFlag"
+                      src="Images/globalPresence/Malaysia.svg"
+                      alt=""
+                    />
+                  </picture>
+                  <span class="globalCountryName"> Malaysia </span>
+                </div>
+
+                <div class="globalActiveCountry">
+                  <picture>
+                    <img
+                      class="globalCountryFlag"
+                      src="Images/globalPresence/Peru.svg"
+                      alt=""
+                    />
+                  </picture>
+                  <span class="globalCountryName"> Peru </span>
+                </div>
+
+                <div class="globalActiveCountry">
+                  <picture>
+                    <img
+                      class="globalCountryFlag"
+                      src="Images/globalPresence/Singapore.svg"
+                      alt=""
+                    />
+                  </picture>
+                  <span class="globalCountryName"> Singapore </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="lastContainerWrapper">
+          <div class="lastContainer">
+            <div class="lastContainerTopSection">
+              <div class="lastContainerSectionTitle">
+                BOOK BUS TICKETS ONLINE
+              </div>
+
+              <div class="lastContainerSectionFeature">
+                <p>
+                  redBus is India's largest brand for online bus ticket booking
+                  and offers an easy-to-use online bus and
+                  <a href="">train ticket</a> booking; with over 36 million
+                  satisfied customers, 3500+ bus operators to choose from, and
+                  plenty of offers on bus ticket booking, redBus makes road
+                  journeys super convenient for travellers. A leading platform
+                  for booking bus tickets, redBus has been the leader in online
+                  bus booking over the past 17 years across thousands of cities
+                  and lakhs of routes in India.
+                </p>
+
+                <p>
+                  Booking a bus ticket online on the redBus app or website is
+                  very simple. You can download the redBus app or visit
+                  redbus.in and enter your source, destination & travel date to
+                  check the top-rated bus services available. You can then
+                  compare bus prices, user ratings & amenities, select your
+                  preferred seat, boarding & dropping points and pay using
+                  multiple payment options like UPI, debit or credit card, net
+                  banking and more. With redBus, get assured safe & secure
+                  payment methods and guaranteed travel with the best seat and
+                  <a class="readMore" href="">Read more</a>
+                  <!-- bus operator of your choice. Once the bus booking payment is
+                  confirmed, all you have to do is pack your bags and get ready
+                  to travel with the m-ticket, which you can show to the bus
+                  operator on your mobile before boarding the bus. Online bus
+                  ticket booking with redBus is that simple!
+                </p>
+
+                <p>
+                  redBus also offers other exclusive benefits on online bus
+                  tickets like flexible ticket rescheduling options, easy &
+                  friendly cancellation policies, and instant payment refunds.
+                  With a live bus tracking feature, you can plan travel and
+                  never miss the bus. You can get the cheapest bus tickets by
+                  availing the best discounts for new & existing customers. With
+                  redDeals, you can also get exclusive & additional discounts on
+                  your online bus ticket booking. You will get 24/7 customer
+                  support on call, chat & help to resolve all your queries in
+                  English & local languages
+                </p>
+
+                <p>
+                  redBus offers Primo bus services, specially curated by redBus,
+                  which have highly rated buses and best-in-class service. With
+                  Primo by redBus, you can be assured of safe, comfortable, and
+                  on-time bus service at no additional cost. With multiple
+                  boarding and dropping points available across all major cities
+                  in India, you can select at your convenience and enjoy a
+                  smooth travel experience.
+                </p>
+
+                <p>
+                  redBus operates in six countries, including India, Malaysia,
+                  Singapore, Indonesia, Peru, and Colombia. Through its website
+                  and app, it has sold over 220 million bus tickets worldwide.
+                  With over 36 million satisfied customers, redBus is committed
+                  to providing its users with a world-class online bus booking
+                  experience.
+                </p>
+
+                <p>
+                  redBus offers bus tickets from some of the top private bus
+                  operators, such as Orange Travels, VRL Travels, SRS Travels,
+                  Chartered Bus, and Praveen Travels, and state government bus
+                  operators, such as APSRTC, TSRTC, GSRTC, Kerala RTC, TNSTC,
+                  RSRTC, UPSRTC, and more. With redBus, customers can easily
+                  book bus tickets for different bus types, such as AC/non-AC,
+                  Sleeper, Seater, Volvo, Multi-axle, AC Sleeper, Electric
+                  buses, and more.
+                </p> -->
+                </p>
+              </div>
+            </div>
+
+            <div class="lastContainermiddleSection">
+              <div class="lastContainerSectionTitle">
+                Bus Booking redDeals on redBus
+              </div>
+
+              <div class="lastContainerSectionFeature">
+                <p>
+                  Don't miss out on these incredible offers, book your bus
+                  tickets now and travel with convenience and affordability.
+                  Hurry, grab the best bus booking deals before they're gone!
+                </p>
+              </div>
+
+              <div class="middleContainerDealOffer">
+                <div class="middleContainerDealOfferLeft">
+                  <picture>
+                    <img src="Images/rdc-redbus-logo.svg" alt="" />
+                  </picture>
+
+                  <div class="middleContainerDeal">
+                    <div class="middleContainerDealTextUpper">
+                      Unlock Unbeatable Exclusive redDeals! <span>20% OFF</span>
+                    </div>
+
+                    <div class="middleContainerDealTextLower">
+                      <span>1375 <text>Deals</text></span>
+
+                      <span>738 <text>Bus Operators</text></span>
+
+                      <span>467653 <text>Routes</text></span>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="bookNowBtn" href="">Book now</a>
+              </div>
+            </div>
+
+            <div class="lastContainerBottomSection FAQs">
+              <div class="lastContainerSectionTitle">
+                FAQs related to Bus Tickets Booking
+              </div>
+
+              <div class="faqNavbar navlist">
+                <a class="faqNavItem" href="">General</a>
+                <a class="faqNavItem" href="">Ticket-related</a>
+                <a class="faqNavItem" href="">Payment</a>
+                <a class="faqNavItem" href="">Cancellation & Refund</a>
+                <a class="faqNavItem" href="">Insurance</a>
+              </div>
+
+              <div class="faqQuestionsSection">
+                <div class="faq-questions">
+                  <span>Can I track the location of my booked bus online?</span>
+                  <i class="bx bx-plus"></i>
+                </div>
+
+                <div class="faq-questions">
+                  <span
+                    >What are the advantages of purchasing a bus ticket with
+                    redBus?
+                  </span>
+                  <i class="bx bx-plus"></i>
+                </div>
+
+                <div class="faq-questions">
+                  <span>Why book bus tickets online on redBus? </span>
+                  <i class="bx bx-plus"></i>
+                </div>
+
+                <div class="faq-questions">
+                  <span
+                    >Do I need to create an account on the redBus site to book
+                    my bus ticket?
+                  </span>
+                  <i class="bx bx-plus"></i>
+                </div>
+
+                <div class="faq-questions">
+                  <span>Does bus booking online cost me more? </span>
+                  <i class="bx bx-plus"></i>
+                </div>
+
+                <div class="faq-questions">
+                  <span>How can I get the discounts on the bus booking? </span>
+                  <i class="bx bx-plus"></i>
+                </div>
+
+                <div class="faq-questions">
+                  <span>What's New in Bus Booking on redBus? </span>
+                  <i class="bx bx-plus"></i>
+                </div>
+
+                <div class="faq-questions">
+                  <span>Can I book a Government bus ticket on redBus?</span>
+                  <i class="bx bx-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="footer">
+        <div class="footer_container">
+            <div class="first_list">
+                <div class="XYZ">
+                    <span>Popular Bus Routes</span>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+
+                <hr>
+
+                <div class="XYZ">
+                    <span>Popular Cities</span>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <hr>
+
+                <div class="XYZ">
+                    <span>Popular Bus Operators</span>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+            </div>
+            <hr>
+            <div class="second_list">
+
+                <div class="list">
+                    <ul class="about">
+                        <li>
+                            <img src="Images/rdc-redbus-logo.svg" alt="">
+                            <p>redBus is the world's largest online bus ticket booking service trusted by over 25
+                                million happy
+                                customers globally. redBus offers bus ticket booking through its website, iOS and
+                                Android mobile
+                                apps for all major routes.</p>
+                    </ul>
+                    </li>
+                    <ul>
+                        <li class="list_heading">About redBus</li>
+                        <li> About us</li>
+                        <li> Investor Relations</li>
+                        <li> Contact us</li>
+                        <li> Mobile version</li>
+                        <li> redBus on mobile</li>
+                        <li> Sitemap</li>
+                        <li>Offers</li>
+                        <li>Careers</li>
+                        <li>Values</li>
+                    </ul>
+                    <ul>
+                        <li class="list_heading">Info</li>
+                        <li>T&C</li>
+                        <li>Privacy policy</li>
+                        <li>FAQ</li>
+                        <li>Blog</li>
+                        <li>Bus operator registration</li>
+                        <li>Agent registration</li>
+                        <li>Insurance partner</li>
+                        <li>User agreement</li>
+                        <li>Primo bus</li>
+                        <li>Bus Timetable</li>
+                    </ul>
+                    <ul>
+                        <li class="list_heading">Global Sites</li>
+                        <li>India</li>
+                        <li>Singapore</li>
+                        <li>Malaysia</li>
+                        <li>Indonesia</li>
+                        <li>Peru</li>
+                        <li>Colombia</li>
+                        <li>Cambodia</li>
+                        <li>Vietnam</li>
+                    </ul>
+                    <ul>
+                        <li class="list_heading">Our Partners</li>
+                        <li>Goibibo Bus</li>
+                        <li>Goibibo Hotels</li>
+                        <li>Makemytrip hotels</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="links">
+                <p>Ⓒ 2023 Redbus India Pvt Ltd. All rights reserved</p>
+                <div class="social">
+                    <img src="Images/social_facebook_new.svg" alt="fb">
+                    <img src="Images/social_instagram_new.svg" alt="in">
+                    <img src="Images/social_linkedin_new.svg" alt="li">
+                    <img src="Images/social_twitter_new.svg" alt="tw">
+                </div>
+            </div>
+        </div>
+     </footer>
+  </body>
+</html>
